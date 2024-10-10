@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Message</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f8ff;
+        }
+
+        .message-box {
+            text-align: center;
+            border: 2px solid #3498db;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #3498db;
+            font-family: 'Arial', sans-serif;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="message-box">
+        <h1>Hey there! 😊</h1>
+        <button id="showMessageBtn">Click me for a surprise!</button>
+        <p id="message" style="display: none; margin-top: 20px;">I LOVE YOU SK ❤️💫</p>
+    </div>
+
+    <script>
+        const button = document.getElementById('showMessageBtn');
+        const message = document.getElementById('message');
+
+        button.addEventListener('click', function() {
+            message.style.display = 'block';
+        });
+    </script>
+
+</body>
+</html>
